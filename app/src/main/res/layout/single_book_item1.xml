@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5mdp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#5C002F34"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="0dp"
+            android:textAlignment="center">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100mdp"
+                android:layout_marginLeft="@dimen/_8mdp"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:layout_marginRight="@dimen/_8mdp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8mdp"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:layout_marginEnd="@dimen/_8mdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Name of Book"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12mdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/product_image" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/_10mdp"
+                android:layout_height="@dimen/_8mdp"
+                android:layout_marginTop="@dimen/_5mdp"
+                app:layout_constraintStart_toStartOf="@+id/product_name"
+                app:layout_constraintTop_toBottomOf="@+id/product_name"
+                app:srcCompat="@drawable/rupees" />
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1mdp"
+                android:maxLength="5"
+                android:text="220"
+                android:textSize="@dimen/_12mdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/product_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2mdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Description"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_10mdp"
+                app:layout_constraintEnd_toEndOf="@+id/product_name"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/product_price" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/_10mdp"
+                android:layout_height="@dimen/_10mdp"
+                app:layout_constraintBottom_toBottomOf="@+id/product_location"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/product_location"
+                app:srcCompat="@drawable/location_icon"
+                app:tint="@color/text_color" />
+
+            <TextView
+                android:id="@+id/product_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3mdp"
+                android:layout_marginTop="@dimen/_4mdp"
+                android:layout_marginBottom="@dimen/_6mdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Name of Book adokamflksdmflasmfd"
+                android:textSize="@dimen/_8mdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/product_name"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/product_desc" />
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="@dimen/_27mdp"
+                android:layout_height="@dimen/_27mdp"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:layout_marginEnd="@dimen/_5mdp"
+                android:background="@drawable/circular_view"
+                android:elevation="10dp"
+                android:padding="@dimen/_5mdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bookmard_icon" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Book_App_Store</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="home">Hello home fragment</string>
+    <string name="chat">Hello chat fragment</string>
+    <string name="ads">Hello ads fragment</string>
+    <string name="profile">Hello profile fragment</string>
+</resources>
